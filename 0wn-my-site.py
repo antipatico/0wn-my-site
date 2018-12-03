@@ -83,7 +83,7 @@ def generate_cookies(start, end):
     cookies=""
     for i in range(start,end-1):
         cookies += "hide_my_site-access%d=1; "%i
-    return cookies + "hide_my_site-access%d=1" % end
+    return cookies + "hide_my_site-access%d=1" %(end-1)
 
 
 def check_base(cookies):
